@@ -1,0 +1,2 @@
+- This is a place for random projects
+- Right now they're mostly from tutorials
