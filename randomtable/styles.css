@@ -1,0 +1,55 @@
+table {
+    border: thin solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td,
+th {
+    border: thin solid black;
+}
+
+body {
+    background-color: bisque;
+    text-align: center;
+}
+
+h1 {
+    color: orange;
+}
+
+h3 {
+    color:orangered;
+}
+
+.author {
+    font-style: italic;
+    text-transform: uppercase;
+    letter-spacing: 6px;
+}
+
+.tabletop {
+    background-color: rgb(191, 157, 8);
+}
+
+.tabletop2 {
+    background-color:rgb(233, 192, 8)
+}
+
+.male {
+    background-color: blue;
+}
+
+.female {
+    background-color: pink;
+}
+
+.cool {
+    font-family: monospace;
+    background-color: green;
+}
+
+.not {
+    font-family: monospace;
+    background-color: red
+}
