@@ -1,2 +1,2 @@
-# projects
+# archive
 Repository of miscellaneous projects
