@@ -1,3 +1,14 @@
+title,
+h1,
+h2,
+h3,
+h4,
+p {
+    text-align: center;
+    line-height: 2;
+}
+
+
 
 
 .colors li {
@@ -9,11 +20,16 @@
     text-align: center;
 }
 
+.colors li:hover {
+    background-color: black;
+    opacity: 0.6;
+}
 .colors a {
     color: white;
     margin-top: auto;
     width: 300px;
     height: 150px;
+    font-size: 25px;
 }
 
 .color1 {
