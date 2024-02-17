@@ -1,0 +1,33 @@
+
+
+.colors li {
+    display:inline-block;
+    width: 300px;
+    height: 150px;
+    border: thin solid black;
+    line-height: 20px;
+    text-align: center;
+}
+
+.colors a {
+    color: white;
+    margin-top: auto;
+    width: 300px;
+    height: 150px;
+}
+
+.color1 {
+    background-color: rgb(125, 33, 45);
+}
+
+.color2 {
+    background-color: rgb(19, 56, 76);
+}
+
+.color3 {
+    background-color: rgb(58, 132, 114);
+}
+
+.color4 {
+    background-color: rgb(171, 151, 38);
+} 
