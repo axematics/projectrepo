@@ -5,6 +5,7 @@
         <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
     </head>
     <body class="background">
+        <!-- Navigation Bar // push logo to top left; arrange nav links horizontally and push to right of container, space-between -->
         <header>
             <div>
                 <img class="logo" src="resources/Images/img-tea-cozy-logo.png">
@@ -18,6 +19,7 @@
             </div>
         </header>
         <main>
+            <!-- Hero Element // need to overlay text on top of background picture -->
             <div class="hero">
                 <div class="hero-text">
                     <h1>Our Mission</h1>
@@ -27,6 +29,96 @@
                     <img src="resources/Images/img-mission-background.jpeg"> 
                 </div>
             </div>
+            <!-- Featured Items - // arrange "featured" containers horizontally and assign wrap -->
+            <div class="featured-title">
+                <h1>Tea of the Month</h1>
+                <h6>What's Steeping at The Tea Cozy?</h6>
+            </div>
+            <div class="featured">
+                <div class="menuitem">
+                    <img class="icon" src="resources/Images/img-berryblitz.jpeg">
+                    <h4>Fall Berry Blitz Tea</h4>
+                </div>
+                <div class="menuitem">
+                    <img class="icon" src="resources/Images/img-spiced-rum.jpeg">
+                    <h4>Spiced Rum Tea</h4>
+                </div>
+                <div class="menuitem">
+                    <img class="icon" src="resources/Images/img-donut.jpeg">
+                    <h4>Seasonal Donuts</h4>
+                </div>
+                <div class="menuitem">
+                    <img class="icon" src="resources/Images/img-myrtle-ave.jpeg">
+                    <h4>Myrtle Ave Tea</h4>
+                </div>
+                <div class="menuitem">
+                    <img class="icon" src="resources/Images/img-bedford-bizarre.jpeg">
+                    <h4>Bedford Bizzare Tea</h4>
+                </div>
+            </div>
+            <!-- Location Box - // arrange tables horizontally: space around, center. "location" should have background image-->
+            <div class="location" style="background-image: url(resources/Images/img-locations-background.jpeg);">
+                <h4>Locations</h4>
+                <div class="addressbox">
+                    <table>
+                        <tr>
+                            <th>Downtown</th>
+                        </tr>
+                        <tr>
+                            <td>384 West 4th St</td>
+                        </tr>
+                        <tr>
+                            <td>Suite 108</td>
+                        </tr>
+                        <tr>
+                            <td>Portland, Maine</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="addressbox">
+                    <table>
+                        <tr>
+                            <th>East Bayside</th>
+                        </tr>
+                        <tr>
+                            <td>3433 Phisherman's Avenue</td>
+                        </tr>
+                        <tr>
+                            <td>(Northwest Corner)</td>
+                        </tr>
+                        <tr>
+                            <td>Portland, Maine</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="addressbox">
+                    <table>
+                        <tr>
+                            <th>Oakdale</th>
+                        </tr>
+                        <tr>
+                            <td>515 Crescent Avenue</td>
+                        </tr>
+                        <tr>
+                            <td>Second Floor</td>
+                        </tr>
+                        <tr>
+                            <td>Portland, Maine</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
         </main>
+        <!-- Footer Section -->
+        <footer>
+            <div class="footer-contact">
+                <h2>The Tea Cozy</h2>
+                <h5>contact@theteacozy.com</h5>
+                <h5>917-555-8904</h5>
+            </div>
+            <div class="copyright"><!--Push to bottom left of container-->
+                <h5>copyright The Tea Cozy 2017</h5>
+            </div>
+        </footer>
     </body>
 </html>
