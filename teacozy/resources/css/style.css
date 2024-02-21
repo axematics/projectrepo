@@ -6,7 +6,7 @@ h1,
 h2,
 h4,
 a {
-    color: seashell
+    color: seashell;
 }
 
 body {
@@ -18,17 +18,101 @@ body {
     text-align: center;
 }
 
+header {
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    display: block;
+    padding: 10px 10px;
+    margin: auto;
+}
+
+.logo {
+    height: 50px;
+    float: left;
+    position: relative;
+    bottom: 5px;
+}
+
+.nav {
+    float: right;
+    justify-content: space-between;
+    position: relative;
+    top: 9px;
+}
+
+.navlink {
+    margin-left: 10px;
+}
+
+.hero-text {
+    width: 1200px;
+    position: absolute;
+    top: 50%;
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+.hero {
+    height: 700px;
+    width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.featured-title {
+    display: block;
+    width: 1000px;
+    margin: 175px auto 0px;
+}
+
+.featured {
+    display: flex;
+    width: 1000px;
+    flex-flow: row wrap;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.menuitem {
+
+}
+
 .icon {
     max-width: 300px;
     max-height: 200px;
+    margin: 0;
 }
 
-.location {
+.icontext {
+
+}
+
+#container { /* BACKGROUND IMAGE NOT SHOWING */
     height: 500px;
+    width: 1200 px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-image: url("resources/Images/img-locations-background.jpeg");
 }
 
 .addressbox {
     background-color: black;
     width: 300px;
+    height: 350px;
+    line-height: 2;
+    opacity: 1;
+    display: inline-block;
+    margin: 15px 20px;
+}
 
+.location-back { /* DELETE IF BACKGROUND IMAGE IN #CONTAINER WORKS */
+    height: 500px;
+    width: 1200px;
+    object-fit: cover;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+footer {
+    margin-top: 50px;
 }
