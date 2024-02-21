@@ -87,12 +87,23 @@ header {
 
 }
 
-#container { /* BACKGROUND IMAGE NOT SHOWING */
-    height: 500px;
-    width: 1200 px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-image: url("resources/Images/img-locations-background.jpeg");
+.container { /* BACKGROUND IMAGE NOT SHOWING */
+    height: 600px;
+    width: 1200px;
+    margin: 50px auto 50px;
+    position: relative;
+}
+
+.location-content {
+    position: absolute;
+    width: 1200px;
+    height: 600px;
+}
+
+.location-title {
+    display: block;
+    position: relative;
+    top: 20px;
 }
 
 .addressbox {
@@ -103,14 +114,18 @@ header {
     opacity: 1;
     display: inline-block;
     margin: 15px 20px;
+    padding: 0;
 }
 
-.location-back { /* DELETE IF BACKGROUND IMAGE IN #CONTAINER WORKS */
-    height: 500px;
+.location-back { 
+    height: 600px;
     width: 1200px;
-    object-fit: cover;
     overflow: hidden;
     margin: 0 auto;
+}
+
+.copyright {
+    float: left;
 }
 
 footer {
