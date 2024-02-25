@@ -1,0 +1,1 @@
+can be used as baseline for recipe blog.

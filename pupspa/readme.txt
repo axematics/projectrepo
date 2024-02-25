@@ -1,0 +1,1 @@
+can be used as baseline template for a dog-related business
