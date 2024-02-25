@@ -1,1 +1,1 @@
-can be used as baseline template for a dog-related business
+can be used as baseline template for a dog-related business (dog daycare, dog grooming, dog walking, etc.)
