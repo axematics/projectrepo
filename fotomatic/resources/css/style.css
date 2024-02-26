@@ -12,7 +12,6 @@ html {
 
 .center {
   text-align: center;
-  justify-content: center;
 }
 
 .button {
@@ -234,10 +233,8 @@ header .mobile {
 }
 
 .image-container img {
-  width: 100%;
-  justify-content: center;
+  max-width: 100%;
   margin-bottom: 2.5rem;
-  object-fit: cover;
 }
 
 .feature h2 {
