@@ -12,20 +12,13 @@ html {
 
 .center {
   text-align: center;
+  justify-content: center;
 }
 
 .button {
   border-radius: 4px;
   background-color: #4a4a4a;
   color: white;
-}
-
-.image-container {
-  overflow: hidden;
-}
-
-.image-container img {
-  display: block;
 }
 
 @media only screen and (max-width: 760px) {
@@ -126,7 +119,7 @@ header .mobile {
 }
 
 #sign-up-cta {
-  padding: 2rem 5rem 2.5rem 5rem;
+  padding: 0 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
@@ -218,7 +211,7 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 4rem 5%;
   background-color: #f3f3f3;
 }
@@ -228,12 +221,23 @@ header .mobile {
   padding: 2rem;
   margin: 0px 1.25rem;
   background-color: white;
+  max-height: 39.6875rem;
+  width: 50%;
+  justify-content: center;
+
 }
 
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0 auto;
+  margin: 0;
+}
+
+.image-container img {
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 2.5rem;
+  object-fit: cover;
 }
 
 .feature h2 {
