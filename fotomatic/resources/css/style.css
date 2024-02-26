@@ -114,7 +114,8 @@ header .mobile {
   align-items: center;
   height: 43.5rem;
   background-image: url("/Users/axelthomas/Library/Mobile Documents/com~apple~CloudDocs/Code/projectrepo/fotomatic/resources/images/banner-landingpage.jpg");
-
+  background-size: cover;
+  background-position: bottom;
 }
 
 #sign-up-cta {
@@ -210,7 +211,7 @@ header .mobile {
 
 #features-section {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 4rem 5%;
   background-color: #f3f3f3;
 }
@@ -229,11 +230,16 @@ header .mobile {
 .feature .image-container {
   width: 90%;
   height: 65%;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .image-container img {
+  display: block;
   max-width: 100%;
+  margin-bottom: 2.5rem;
+}
+
+.center .content {
   margin-bottom: 2.5rem;
 }
 
