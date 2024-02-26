@@ -41,6 +41,7 @@ header {
   width: 100%;
   border-bottom: solid 1px #c6c1c1;
   background-color: white;
+  z-index: 10;
 }
 
 header .content {
@@ -51,6 +52,9 @@ header .content {
 
 header .logo {
   flex: 1;
+  font-family: Roboto-Mono-Regular;
+  font-size: 1.5rem;
+  color: #4A4A4A;
 }
 
 header nav ul {
@@ -115,15 +119,18 @@ header .mobile {
 #sign-up-section {
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
   height: 43.5rem;
+  background-image: url("/Users/axelthomas/Library/Mobile Documents/com~apple~CloudDocs/Code/projectrepo/fotomatic/resources/images/banner-landingpage.jpg");
+
 }
 
 #sign-up-cta {
-  padding: 0 5rem 2.5rem 5rem;
+  padding: 2rem 5rem 2.5rem 5rem;
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
+  margin-left: 100px;
 }
 
 #sign-up-cta .content {
