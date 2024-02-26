@@ -224,7 +224,7 @@ header .mobile {
   max-height: 39.6875rem;
   width: 50%;
   justify-content: center;
-
+  line-height: 1.2;
 }
 
 .feature .image-container {
@@ -310,6 +310,8 @@ header .mobile {
 #filters-section .images-container {
   max-width: 100%;
   padding: 0 1%;
+  display: flex;
+  justify-content: space-around;
 }
 
 @media only screen and (max-width: 760px) {
@@ -348,11 +350,11 @@ header .mobile {
   background-color: #f3f3f3;
 }
 
-#quotes-section content {
+#quotes-section .content {
   padding: 5rem 0;
 }
 
-#quotes-section quote {
+#quotes-section .quote {
   padding-right: 1.875rem;
   font-family: "Palatino", serif;
   font-size: 1.875rem;
@@ -393,6 +395,7 @@ footer .content {
   color: white;
   display: flex;
   font-size: .75rem;
+  font-family: Roboto-Regular;
 }
 
 footer .copyright {
