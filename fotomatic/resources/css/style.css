@@ -22,7 +22,7 @@ html {
 
 @media only screen and (max-width: 760px) {
   .main-content {
-    top: 2.5625rem;
+    top: 4.5rem;
   }
 }
 
@@ -73,21 +73,35 @@ header .mobile {
   display: none;
 }
 
+header .tablet {
+  display: none;
+}
+
 @media only screen and (max-width: 760px) {
   header .desktop {
-    display: none;
+    display: flex;
+
   }
 
-  header .mobile {
+  header .logo {
+    margin-left: 1.25rem;
+  }
+
+  nav li {
+    padding-left: 1.5rem;
+  }
+
+  header .tablet {
     display: block;
-    width: 100%;
   }
 
   header .content {
-    padding: .5rem 0;
+    padding: 1.5rem 0.5rem;
   }
 
-  header .mobile ul {
+
+
+  /* header .mobile ul {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -96,9 +110,14 @@ header .mobile {
 
   header .mobile li {
     padding: 0;
+
   }
 
-  header .mobile .button {
+  header .mobile img {
+    display: none;
+  } */
+
+  .button {
     padding: .1875rem .5rem;
     background-color: #9dc20b;
     line-height: 1.6;
@@ -116,6 +135,7 @@ header .mobile {
   background-image: url("/Users/axelthomas/Library/Mobile Documents/com~apple~CloudDocs/Code/projectrepo/fotomatic/resources/images/banner-landingpage.jpg");
   background-size: cover;
   background-position: bottom;
+  padding-left: 6.25rem;
 }
 
 #sign-up-cta {
@@ -123,7 +143,6 @@ header .mobile {
   border: solid 1px #979797;
   border-radius: 4px;
   background-color: #9dc20b;
-  margin-left: 100px;
 }
 
 #sign-up-cta .content {
@@ -166,6 +185,7 @@ header .mobile {
     align-items: center;
     justify-content: center;
     height: 28rem;
+    padding-left: 0;
   }
 
   #sign-up-cta {
@@ -177,7 +197,7 @@ header .mobile {
   }
 
   #sign-up-cta .content {
-    margin-top: 0;
+    margin-top: 2rem;
   }
 
   #sign-up-cta .email {
@@ -257,31 +277,30 @@ header .mobile {
   color: #4a4a4a;
 }
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 760px) {
+  #features-section {
+    flex-flow: row;
+    padding: 0;
+  }
+
+  .feature {
+    margin: 1rem 0.5rem;
+    padding: 1.25rem 1rem 0 1rem;
+  }
+
   .feature h2 {
-    font-size: 1.125rem;
+    font-size: 2rem;
     line-height: 1.3;
-    font-weight: normal;
+    font-weight: bold;
+    text-align: left;
   }
 
   .feature h3 {
     font-size: .875rem;
     line-height: 1.4;
+    text-align: left;
   }
 }
-
-@media only screen and (max-width: 760px) {
-  #features-section {
-    flex-flow: column;
-    padding: 0;
-  }
-
-  .feature {
-    margin: 0;
-    padding: 1.25rem 1rem 0 1rem;
-  }
-}
-
 /* Filters Section */
 
 #filters-section {
@@ -339,9 +358,9 @@ header .mobile {
     padding: 0;
   }
 
-  #filters-section .extra {
+  /* #filters-section .extra {
     display: none;
-  }
+  }*/
 }
 
 /* Quotes Section */
@@ -352,6 +371,7 @@ header .mobile {
 
 #quotes-section .content {
   padding: 5rem 0;
+  text-align: left;
 }
 
 #quotes-section .quote {
@@ -370,17 +390,20 @@ header .mobile {
 @media only screen and (max-width: 760px) {
   #quotes-section content {
     padding: 1.875rem .625rem;
+    display: flex;
+    align-content: center;
   }
 
-  #quotes-section quote {
-    font-size: 1.5rem;
-    line-height: 1.4;
+  #quotes-section .quote {
+    display: block;
+    width: 80%;
   }
 
-  #quotes-section quote-citation {
+  #quotes-section .quote-citation {
     display: block;
     padding-top: 1rem;
-    margin: auto;
+    margin: 0;
+    float: right;
   }
 }
 
