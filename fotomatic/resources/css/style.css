@@ -326,6 +326,40 @@ header .tablet {
     text-align: left;
   }
 }
+
+@media only screen and (max-width: 450px) {
+  #features-section {
+    display: block;
+  }
+
+  .feature {
+    width: auto;
+    padding: 0;
+  }
+
+  .image-container img{
+    margin-bottom: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .feature .image-container {
+    width: 100%;
+  }
+  .feature h2 {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 1rem;
+    font-family: Roboto-Regular;
+  }
+
+  .feature h3 {
+    padding: 0.5rem 1rem 2rem 1rem;
+    text-align: center;
+  }
+}
+
 /* Filters Section */
 
 #filters-section {
@@ -382,10 +416,12 @@ header .tablet {
   #filters-section .images-container {
     padding: 0;
   }
+}
 
-  /* #filters-section .extra {
+@media only screen and (max-width: 450px) {
+  #filters-section .extra {
     display: none;
-  }*/
+  }
 }
 
 /* Quotes Section */
@@ -431,6 +467,23 @@ header .tablet {
   }
 }
 
+@media only screen and (max-width: 450px) {
+  #quotes-section .content {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  #quotes-section .quote {
+    display: block;
+    width: 100%;
+  }
+  #quotes-section .quote-citation {
+    object-fit: contain;
+    margin: 1.6rem auto;
+  }
+}
+
 /* Footer */
 
 footer {
@@ -449,7 +502,7 @@ footer .copyright {
   flex-grow: 1;
 }
 
-@media only screen and (min-width: 760px) {
+@media only screen and (max-width: 760px), (max-width: 450px) {
   footer .content {
     font-size: .625rem;
   }
