@@ -8,6 +8,7 @@ html {
     background-color: #C1B0E8;
     font-family: Dosis;
     font-size: 16px;
+    padding: 0;
 }
 
 /* Header & Nav Styles */
@@ -71,3 +72,35 @@ header h1 {
     font-size: 2em;
     padding: 1em;
 }
+
+/* Menu Section Styles */
+
+#menu-container {
+    display: flex;
+    margin: 2em auto;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 3em;
+}
+
+.menu-item {
+    width: 7em;
+    height: 9em;
+    border: solid thin #E05599;
+    border-radius: 1em;
+}
+
+.menu-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.menu-item h4 {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Cafe Quote Section Styles */
+
