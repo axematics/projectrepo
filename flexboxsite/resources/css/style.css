@@ -1,0 +1,46 @@
+/* Universal Styles */
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    background-color: #C1B0E8;
+    font-family: Dosis;
+    font-size: 16px;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+}
+
+.header-container {
+    width: 100%;
+    background-color: white;
+    margin: 0;
+    border-radius: 3.5rem;
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    font-size: 2rem;
+    padding: 0;
+    margin: 1rem;   
+}
+
+.nav-bar a {
+    color: white;
+    text-transform: lowercase;
+}
+
+header h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 0;
+}
+
