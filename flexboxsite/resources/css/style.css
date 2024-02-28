@@ -104,3 +104,19 @@ header h1 {
 
 /* Cafe Quote Section Styles */
 
+.quote-container {
+    display: flex;
+    align-content: center;
+    height: 10em;
+    background-color: #E05599;
+    color: white;
+    font-family: "Dancing Script";
+    font-size: 2em;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.quote-container h5 {
+    margin: auto 3em;
+}
