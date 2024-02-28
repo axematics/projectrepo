@@ -10,6 +10,8 @@ html {
     font-size: 16px;
 }
 
+/* Header & Nav Styles */
+
 .logo {
     width: 100px;
     height: 100px;
@@ -44,3 +46,28 @@ header h1 {
     margin: 0;
 }
 
+/* Hero Styles */
+
+#hero-container {
+    display: block;
+    position: relative;
+    height: 25em;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-back img {
+    height: 100%;
+    width: 100%;
+}
+
+.hero-text h2 {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    background-color: #E05599;
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding: 1em;
+}
