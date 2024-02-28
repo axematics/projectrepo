@@ -71,6 +71,8 @@ header h1 {
     color: white;
     font-size: 2em;
     padding: 1em;
+    letter-spacing: 0.2em;
+    opacity: 0.8;
 }
 
 /* Menu Section Styles */
@@ -115,8 +117,64 @@ header h1 {
     font-style: italic;
     font-weight: bold;
     text-align: center;
+    overflow: hidden;
 }
 
 .quote-container h5 {
     margin: auto 3em;
+}
+
+/* Cafe Features Section Styles */
+
+#cafe-container {
+    display: flex;
+    margin: 2em auto;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 3em;
+    height: 20em;
+    align-content: center;
+}
+
+.cafe-item {
+    width: 15em;
+    height: 10em;
+    border: solid thin #E05599;
+    border-radius: 1em;
+}
+
+.cafe-item img {
+    height: 100%;
+    width: 100%;
+    border-radius: 1em;
+}
+
+.cafe-item h4 {
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+/* Footer Styles */
+
+.footerlogo {
+    margin-top: 1em;
+}
+
+footer {
+    background-color: white;
+    color: white;
+}
+
+.copyright,
+.author {
+    display: inline-block;
+}
+
+.copyright {
+    float: left;
+}
+
+.author {
+    float: right;
 }
