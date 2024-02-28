@@ -28,3 +28,10 @@ A simple color scheme using CSS named colors, but yours can be more elaborate wi
 Fonts from the Google Fonts API.
 Custom images. A great source for project images when you’re practicing web design is Unsplash.
 Get creative! Customizing your site’s look and feel is one of the most exciting parts of building your own websites. You can review any of these other CSS properties in our Learn CSS course.
+
+
+Colors:
+
+Primary - #C1B0E8
+Secondary - #E05599
+Text color - white
