@@ -137,3 +137,29 @@ header a {
 .player-container h2 {
     font-size: 3em;
 }
+
+/* Team Section */
+
+#team-section {
+    background-color: #132257;
+}
+
+.crest-team-container {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+.crest-team {
+    width: 30%;
+}
+
+.quote-container {
+    height: 15em;
+    color: white;
+}
+
+.quote-container h4, h6 {
+    padding: 1em 5em;
+    line-height: 2em;
+}
