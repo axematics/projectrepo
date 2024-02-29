@@ -1,0 +1,46 @@
+
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: #132257;
+    color: white;
+    width: 100%;
+    opacity: 0.95;
+}
+
+#crest {
+    height: 4em;
+    padding: 1em;
+}
+
+header h1 {
+    align-items: center;
+    display: flex;
+    font-size: 2em;
+}
+
+header .nav-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 3em;
+}
+
+header ul{
+    display: flex;
+    justify-items: space-between;
+    gap: 4em;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.button {
+    padding: 0.5em;
+    border: thick solid white;
+    border-radius: 3em;
+}
