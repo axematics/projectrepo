@@ -1,4 +1,6 @@
+/* Universal */
 
+/* Header Section */
 
 header {
     display: flex;
@@ -7,6 +9,7 @@ header {
     color: white;
     width: 100%;
     opacity: 0.95;
+    z-index: 10;
 }
 
 #crest {
@@ -43,4 +46,17 @@ header a {
     padding: 0.5em;
     border: thick solid white;
     border-radius: 3em;
+}
+
+/* Banner Section */
+
+#banner-section {
+    position: relative;
+    top: 6em;
+}
+
+.banner-container img {
+    margin: 0 auto;
+    display: block;
+    opacity: 0.5;
 }
