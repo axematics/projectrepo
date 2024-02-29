@@ -12,7 +12,7 @@ Notes:
 
 <section "banner">
     <img team picture>
-    <h2>Welcome to the Lane</h1>
+    <h2>Welcome to the Lane</h2>
     <h5>Home of Tottenham Hotspur Fans From Around the World</h5>
 </section>
 
