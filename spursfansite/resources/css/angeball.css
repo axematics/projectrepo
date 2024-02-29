@@ -1,5 +1,9 @@
 /* Universal */
 
+.cancel-block {
+    display: initial;
+}
+
 main {
     padding-top: 6em;
 }
@@ -113,9 +117,10 @@ header a {
 }
 
 .player-container {
-    display: block;
+    display: flex;
     text-align: center;
     width: 25%;
+    flex-flow: column wrap;
 }
 
 .player-container img {
