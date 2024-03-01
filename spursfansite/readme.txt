@@ -47,4 +47,4 @@ Notes:
     - club logo center bottom
 </footer>
 
-
+update: need only to focus on @media queries. styling may not yet be in depth. compatibility with different viewports is what matters. 
