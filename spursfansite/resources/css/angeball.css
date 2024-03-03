@@ -142,6 +142,7 @@ header a {
 
 #team-section {
     background-color: #132257;
+    padding-bottom: 5em;
 }
 
 .crest-team-container {
@@ -163,4 +164,72 @@ header a {
     padding: 1em 5em;
     line-height: 2em;
     text-align: center;
+}
+
+.team-pictures-container {
+    display: grid;
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+    grid-template-areas:    "team2 team3"
+                            "team2 team4";
+    grid-template-rows: 1.5fr 1.5fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.team-pictures-container img {
+    max-width: 100%;
+}
+
+.team2 {
+    grid-area: team2;
+}
+
+.team3 {
+    grid-area: team3;
+}
+
+.team4 {
+    grid-area: team4;
+}
+
+/* Stadium Section Styles */
+
+#stadium-section {
+    background-color: white;
+}
+
+.stadium-text {
+    color: #132257;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 3em auto;
+}
+
+.stadium-container {
+    display: grid;
+    max-width: 75%;
+    position: relative;
+    margin: auto;
+    grid-template-areas:    "stadium3 stadium2"
+                            "stadium1 stadium2";
+    grid-template-rows: 0.5fr 1.5fr;
+    grid-template-columns: 1fr 2fr;
+}
+
+.stadium-container img {
+    max-width: 100%;
+}
+
+.stadium1 {
+    grid-area: stadium1;
+}
+
+.stadium2 {
+    grid-area: stadium2;
+}
+
+.stadium3 {
+    grid-area: stadium3;
 }
