@@ -56,6 +56,44 @@ header a {
     border-radius: 3em;
 }
 
+.nav-icon-container {
+    display: none;
+}
+
+.thfc {
+    display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+    .nav-icon-container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 1em;
+    }
+
+    .nav-icon-container .nav-icon {
+        object-fit: contain;
+    }
+
+    header .nav-container {
+        display: none;
+    }
+
+    .thfc {
+        display: flex;
+        letter-spacing: 1em;
+    }
+
+    header h1 {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+}
+
 /* Banner Section */
 
 .picture-container {
@@ -64,6 +102,7 @@ header a {
 
 .banner-container img {
     margin: 0 auto;
+    max-width: 100%;
     display: block;
     opacity: 0.5;
 }
@@ -95,6 +134,22 @@ header a {
     font-weight: bolder;
 }
 
+@media only screen and (max-width: 1000px) {
+    .banner-container h2 {
+        font-size: 2.5em;
+    }
+    
+    .banner-container h5 {
+        top: 60%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .banner-container h2, h5 {
+        display: none;
+    }
+}
+
 /* Players Section */
 
 .players-title {
@@ -112,7 +167,7 @@ header a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 7em;
+    gap: 3em;
     padding: 5em;
 }
 
@@ -121,21 +176,40 @@ header a {
     text-align: center;
     width: 25%;
     flex-flow: column wrap;
+    color:#132257;
 }
 
 .player-container img {
-    max-height: 16em;
+    height: 50%;
+    max-width: 100%;
     border: thick solid #132257;
     border-radius: 1em;
 }
 
 .player-container h4 {
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin: 1em auto;
 }
 
 .player-container h2 {
-    font-size: 3em;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 650px) {
+    .player-container {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .player-container img {
+        height: auto;
+        max-width: 75%;
+        margin: 0 auto;
+    }
+
+    .players-title {
+        font-size: 1.5em;
+    }
 }
 
 /* Team Section */
@@ -193,6 +267,18 @@ header a {
     grid-area: team4;
 }
 
+@media only screen and (max-width: 650px) {
+    .team-pictures-container {
+        display: block;
+        margin: 2em auto;
+    }
+
+    .quote-container h4, h6 {
+        font-size: 0.8em;
+    }
+}
+
+
 /* Stadium Section Styles */
 
 #stadium-section {
@@ -216,6 +302,7 @@ header a {
     max-width: 75%;
     position: relative;
     margin: auto;
+    padding-bottom: 5em;
     grid-template-areas:    "stadium3 stadium2"
                             "stadium1 stadium2";
     grid-template-rows: 0.5fr 1.5fr;
@@ -228,12 +315,74 @@ header a {
 
 .stadium1 {
     grid-area: stadium1;
+    align-self: stretch;
 }
 
 .stadium2 {
     grid-area: stadium2;
+    align-self: stretch;
 }
 
 .stadium3 {
     grid-area: stadium3;
+}
+
+@media only screen and (max-width: 650px) {
+    .stadium-text {
+        font-size: 1em;
+    }
+
+    .stadium-container {
+        display: block;
+    }
+    
+}
+
+/* Footer */
+
+footer {
+    background-color:#132257;
+    color: white;
+}
+
+.footer-logo-container {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-logo {
+    margin: 2em auto;
+    width: 5em;
+}
+
+.footer-lead {
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.footer-nav-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 2em 10em;
+    color: white;
+    text-align: center;
+}
+
+.footer-nav-container a {
+    color: white;
+    line-height: 1.5em;
+}
+
+.copyright-author-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    font-size: 0.5em;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 500px) {
+    .footer-nav-container {
+        margin: 2em 3em;
+    }
 }
