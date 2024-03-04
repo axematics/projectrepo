@@ -201,11 +201,15 @@ header a {
 
 .stadium-text {
     color: #132257;
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
-    text-align: center;
-    padding: 3em auto;
+    text-align: justify;
+    margin: 3em auto;
+    max-width: 80%;
+    line-height: 1.5em;
+    text-transform: uppercase;
 }
+
 
 .stadium-container {
     display: grid;
