@@ -49,3 +49,4 @@ Notes:
 
 update: need only to focus on @media queries. styling may not yet be in depth. compatibility with different viewports is what matters. 
 
+(06.03.2024) update : @media queries finished, but not yet optimized for mobile. needs fine-tuning, but wrapping up the site here for now.
