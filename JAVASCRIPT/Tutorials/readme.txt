@@ -1,0 +1,1 @@
+random projects and functions from Codecademy tutorials
