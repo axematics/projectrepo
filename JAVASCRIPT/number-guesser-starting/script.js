@@ -10,11 +10,11 @@ const generateTarget = () => {
     return x;
 }
 
-const compareGuesses = (user,cpu,secret) => {
-    secret = generateTarget();
-    if (user == secret || Math.abs(secret - user) < Math.abs(secret - cpu) || secret - user == secret - cpu) {
+const compareGuesses = (user,cpu,target) => {
+    target = generateTarget();
+    if (user == target || Math.abs(target - user) < Math.abs(target - cpu) || target - user == target - cpu) {
         return true;
-    } else if (cpu == secret || Math.abs(secret - user) > Math.abs(secret - cpu)) {
+    } else if (cpu == target || Math.abs(target - user) > Math.abs(target - cpu)) {
         return false;
     } else {
         return 'Error';
