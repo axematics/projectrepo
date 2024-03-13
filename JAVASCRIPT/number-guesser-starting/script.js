@@ -26,10 +26,8 @@ const compareGuesses = (user,cpu,secret) => {
 const updateScore = winner => {
     if (winner = 'human') {
         humanScore++;
-    } else if (winner = 'computer') {
-        computerScore++;
     } else {
-        return 'Player doesn\'t exist';
+        computerScore++;
     }
 }
 
