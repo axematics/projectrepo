@@ -24,9 +24,10 @@ const compareGuesses = (user,cpu,target) => {
 // console.log(compareGuesses(2,7,9));
 
 const updateScore = winner => {
-    if (winner = 'human') {
+    if (winner == 'human') {
         humanScore++;
-    } else {
+    } 
+    if (winner == 'computer') {
         computerScore++;
     }
 }
@@ -34,3 +35,9 @@ const updateScore = winner => {
 const advanceRound = () => {
     currentRoundNumber++;
 }
+
+/*updateScore('computer');
+updateScore('computer');
+updateScore('human');
+console.log(computerScore);
+console.log(humanScore);*/
