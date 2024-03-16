@@ -27,19 +27,23 @@ const menu = {
   console.log(menu._price);
   console.log(menu.todaysSpecial);
   
+  /* CREATING RANDOM WEEKLY SPECIAL GENERATOR */
+
+  //create factory function to produce dishes as individual objects
   const dish = (dishName, dishPrice) => {
     return {
       dishName,
       dishPrice
     }
   }
-  
+
   let special1 = dish('Sushi',2.59);
   let special2 = dish('Wakamesalat', 1.99);
   let special3 = dish('Schweinebraten', 9.99);
   let special4 = dish('Focaccia', 3.99);
   let special5 = dish('Roulade', 6.49);
   
+  //add dishes to array from which we can randomize
   const randomSpecials = [special1,special2,special3,special4,special5];
   //console.log(randomSpecials);
   
@@ -48,4 +52,4 @@ const menu = {
     console.log(randomSpecials[i]);
   }
   
-  getSpecial();
+  getSpecial(); //returns random dish object from array, but logs key:value pairs...
