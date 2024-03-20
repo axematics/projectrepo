@@ -5,7 +5,7 @@
 - indexOf() to first occurrence of letter
 - splice before resulting index
 - lastIndexOf() to last occurrence of letter
-- return .length on resulting string
+- return difference between the two index positions
 */
 
 const countThis = (arr,thisLetter) => {
