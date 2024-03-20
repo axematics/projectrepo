@@ -2,10 +2,9 @@
 /*
 - count how many times query is found
   - if less than 2 or more than 2, return 0
--  to first occurrence of letter
+- indexOf() to first occurrence of letter
 - splice before resulting index
-- findIndex to last occurrence of letter (count backwards)
-- splice after resulting index
+- lastIndexOf() to last occurrence of letter
 - return .length on resulting string
 */
 
