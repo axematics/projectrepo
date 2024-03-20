@@ -23,8 +23,25 @@ const mystery5 = [4, 9, 1, 3, 5, 4, 0, 4, 6, 3, 0, 7, 2, 5, 2, 3]
 const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, invalid3, invalid4, invalid5, mystery1, mystery2, mystery3, mystery4, mystery5]
 
 
-// Add your functions below:
+// should return 'true' when card number is valid, 'false' when card number is invalid
+const validateCred = arr => {
+    for (let i = arr.length; i > 0; i-2) {
+        return arr[i] = arr[i]*2;
+    };
+    if (arr[i] > 9) {
+        return arr[i] = arr[i] - 9;
+    };
+    let sum = arr.reduce((acc,curr) => {
+        return acc + curr
+    });
+    if (sum%10 == 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
+console.log(validateCred(valid1));
 
 
 
