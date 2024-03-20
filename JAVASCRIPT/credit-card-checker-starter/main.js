@@ -51,7 +51,9 @@ const findInvalidCards = arr => {
 
 console.log(findInvalidCards(batch));
 
-
+const idInvalidCardCompanies = arr => {
+    
+}
 
 
 
