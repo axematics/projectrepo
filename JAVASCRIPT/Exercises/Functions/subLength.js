@@ -32,3 +32,7 @@ const countThis = (arr,thisLetter) => {
   console.log(subLength('accelerate', 'a'));
   
   //Prints: 8 (# of characters in 'accelerate' between 'a', inclusive)
+
+  console.log(subLength('pretty','t'));
+
+  //Prints: 2 
