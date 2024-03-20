@@ -37,9 +37,19 @@ const validateCred = arr => {
     }
 }
 
-console.log(validateCred(valid1));
+console.log(validateCred(invalid1));
 
+const findInvalidCards = arr => {
+    let listInvalidCards = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (validateCred(arr[i]) === true) {
+            listInvalidCards.push(arr[i]);
+        }
+    }
+    return listInvalidCards;
+}
 
+console.log(findInvalidCards(batch));
 
 
 
