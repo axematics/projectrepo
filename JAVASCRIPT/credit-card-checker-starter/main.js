@@ -25,15 +25,11 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // should return 'true' when card number is valid, 'false' when card number is invalid
 const validateCred = arr => {
-    for (let i = arr.length; i > 0; i-2) {
-        return arr[i] = arr[i]*2;
-    };
-    if (arr[i] > 9) {
-        return arr[i] = arr[i] - 9;
-    };
-    let sum = arr.reduce((acc,curr) => {
-        return acc + curr
-    });
+    let i;
+    for (i = arr.length; i >= 0; i-=2) {arr[i] = arr[i]*2; if (arr[i] > 9) {arr[i] -= 9}};
+    arr.pop();
+    console.log(arr);
+    let sum = arr.reduce((acc,curr) => acc + curr);
     if (sum%10 == 0) {
         return true;
     } else {
