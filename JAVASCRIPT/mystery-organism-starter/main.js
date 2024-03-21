@@ -45,6 +45,7 @@ const pAequorFactory = (specimenNum, dna) => {
           console.log('Error in random generation');
           break;
       };
+      //console.log(selectedBase);
       return selectedBase;
     }
   }
