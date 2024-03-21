@@ -45,8 +45,9 @@ console.log(validateCred(invalid3));
 const findInvalidCards = arr => {
     let listInvalidCards = [];
     for (let i = 0; i < arr.length; i++) {
-        if (validateCred(arr[i]) === false) {
-            listInvalidCards.push(arr[i]);
+        let currCred = arr[i];
+        if (validateCred(currCred) === false) {
+            listInvalidCards.push(currCred);
         } 
     }
     return listInvalidCards;
@@ -77,6 +78,7 @@ const idInvalidCardCompanies = arr => {
   }
   
     console.log(idInvalidCardCompanies(batch))
+    
   
   
 
