@@ -39,43 +39,43 @@ const validateCred = card => {
     }
 }
 
-console.log(validateCred(valid4));
+console.log(validateCred(invalid3));
 
 
 const findInvalidCards = arr => {
     let listInvalidCards = [];
     for (let i = 0; i < arr.length; i++) {
-        if (validateCred(arr[i]) === true) {
+        if (validateCred(arr[i]) === false) {
             listInvalidCards.push(arr[i]);
-        }
+        } 
     }
     return listInvalidCards;
 }
 
-console.log(findInvalidCards(batch));
+//console.log(findInvalidCards(batch));
 
-//THROWS FATAL ERROR
+
 const idInvalidCardCompanies = arr => {
     let companyList = [];
     let invalidCards = findInvalidCards(arr);
-    console.log(invalidCards);
+    console.log(invalidCards[2][0]);
     for (let i = 0; i < invalidCards.length; i++) {
-      if (invalidCards[i][0] == 3 && !companyList.includes('Amex (American Express)')) {
+      if (invalidCards[i][0] === 3/* && !companyList.includes('Amex (American Express)')*/) {
         companyList.push('Amex (American Express)' + ': ' + invalidCards[i].join(''));
-      } else if (invalidCards[i][0] == 4 && !companyList.includes('Visa')) {
+      } else if (invalidCards[i][0] === 4/* && !companyList.includes('Visa')*/) {
         companyList.push('Visa' + ': ' + invalidCards[i].join(''));
-      } else if (invalidCards[i][0] == 5 && !companyList.includes('Mastercard')) {
+      } else if (invalidCards[i][0] === 5/* && !companyList.includes('Mastercard')*/) {
         companyList.push('Mastercard' + ': ' + invalidCards[i].join(''));
-      } else if (invalidCards[i][0] == 6 && !companyList.includes('Discover')) {
+      } else if (invalidCards[i][0] === 6/* && !companyList.includes('Discover')*/) {
         companyList.push('Discover' + ': ' + invalidCards[i].join(''));
       } else {
         companyList.push('Company not found' + ': ' + invalidCards[i].join(''));
       };
-      return companyList;
     }
+    return companyList;
   }
   
-  console.log(idInvalidCardCompanies(invalid1))
+    console.log(idInvalidCardCompanies(batch))
   
   
 
