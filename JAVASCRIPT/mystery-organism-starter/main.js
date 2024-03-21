@@ -13,7 +13,42 @@ const mockUpStrand = () => {
   return newStrand;
 };
 
-
+const pAequorFactory = (specimenNum, dna) => {
+  return {
+    specimenNum,
+    dna,
+    mutate() {
+      let selectedBase = this.dna[Math.floor(Math.random() * this.dna.length)];
+      let dnaBases = ['A', 'T', 'C', 'G'];
+      switch (selectedBase) {
+        case 'A':
+          while (selectedBase = 'A') {
+            selectedBase = returnRandBase();
+          };
+          break;
+        case 'T':
+          while (selectedBase = 'T') {
+            selectedBase = returnRandBase();
+          };
+          break;
+        case 'C':
+          while (selectedBase = 'C') {
+            selectedBase = returnRandBase();
+          };
+          break;
+        case 'G':
+          while (selectedBase = 'G') {
+            selectedBase = returnRandBase();
+          };
+          break;
+        default:
+          console.log('Error in random generation');
+          break;
+      };
+      return selectedBase;
+    }
+  }
+}
 
 
 
