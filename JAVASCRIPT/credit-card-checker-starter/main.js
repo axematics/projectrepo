@@ -75,7 +75,7 @@ const idInvalidCardCompanies = arr => {
     }
   }
   
-  console.log(idInvalidCardCompanies(batch))
+  console.log(idInvalidCardCompanies(invalid1))
   
   
 
