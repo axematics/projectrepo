@@ -55,25 +55,27 @@ const findInvalidCards = arr => {
 console.log(findInvalidCards(batch));
 
 //THROWS FATAL ERROR
-/*const idInvalidCardCompanies = arr => {
+const idInvalidCardCompanies = arr => {
+    let companyList = [];
     let invalidCards = findInvalidCards(arr);
     console.log(invalidCards);
     for (let i = 0; i < invalidCards.length; i++) {
-      if (invalidCards[i][0] == 3 && !invalidCards.includes('Amex (American Express)')) {
-        invalidCards.push('Amex (American Express)');
-      } else if (invalidCards[i][0] == 4 && !invalidCards.includes('Visa')) {
-        invalidCards.push('Visa');
-      } else if (invalidCards[i][0] == 5 && !invalidCards.includes('Mastercard')) {
-        invalidCards.push('Mastercard');
-      } else if (invalidCards[i][0] == 6 && !invalidCards.includes('Discover')) {
-        invalidCards.push('Discover');
+      if (invalidCards[i][0] == 3 && !companyList.includes('Amex (American Express)')) {
+        companyList.push('Amex (American Express)' + invalidCards[i].join(''));
+      } else if (invalidCards[i][0] == 4 && !companyList.includes('Visa')) {
+        companyList.push('Visa' + invalidCards[i].join(''));
+      } else if (invalidCards[i][0] == 5 && !companyList.includes('Mastercard')) {
+        companyList.push('Mastercard' + invalidCards[i].join(''));
+      } else if (invalidCards[i][0] == 6 && !companyList.includes('Discover')) {
+        companyList.push('Discover' + invalidCards[i].join(''));
       } else {
-        invalidCards.push('Company not found');
-      }
+        companyList.push('Company not found' + invalidCards[i].join(''));
+      };
+      return companyList;
     }
   }
   
-  console.log(idInvalidCardCompanies(batch))*/
+  console.log(idInvalidCardCompanies(batch))
   
   
 
