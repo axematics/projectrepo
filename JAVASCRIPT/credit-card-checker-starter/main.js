@@ -54,9 +54,27 @@ const findInvalidCards = arr => {
 
 console.log(findInvalidCards(batch));
 
-const idInvalidCardCompanies = arr => {
-    
-}
-
+//THROWS FATAL ERROR
+/*const idInvalidCardCompanies = arr => {
+    let invalidCards = findInvalidCards(arr);
+    console.log(invalidCards);
+    for (let i = 0; i < invalidCards.length; i++) {
+      if (invalidCards[i][0] == 3 && !invalidCards.includes('Amex (American Express)')) {
+        invalidCards.push('Amex (American Express)');
+      } else if (invalidCards[i][0] == 4 && !invalidCards.includes('Visa')) {
+        invalidCards.push('Visa');
+      } else if (invalidCards[i][0] == 5 && !invalidCards.includes('Mastercard')) {
+        invalidCards.push('Mastercard');
+      } else if (invalidCards[i][0] == 6 && !invalidCards.includes('Discover')) {
+        invalidCards.push('Discover');
+      } else {
+        invalidCards.push('Company not found');
+      }
+    }
+  }
+  
+  console.log(idInvalidCardCompanies(batch))*/
+  
+  
 
 
