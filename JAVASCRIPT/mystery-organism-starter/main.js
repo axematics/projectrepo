@@ -79,7 +79,14 @@ const pAequorFactory = (specimenNum, dna) => {
   }
 }
 
-const sample
+const createpAequor = number => {
+  let pool = [];
+  for (let i = 0; i < number; i++) {
+    let randStrand = mockUpStrand();
+    pool += pAequorFactory(i,randStrand);
+  };
+  return pool;
+}
 
 /*
 let thing = pAequorFactory(1234, ['A','T','C','G','A','G','C','A','A','G']);
@@ -92,3 +99,7 @@ console.log(thing.compareDNA(thing2));
 console.log(thing.compareDNA(thing3));
 console.log(thing2.willLikelySurvive());
 */
+
+let sample1 = createpAequor(10);
+console.log(sample1);
+
