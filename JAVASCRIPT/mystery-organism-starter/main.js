@@ -58,7 +58,8 @@ const pAequorFactory = (specimenNum, dna) => {
       };
       console.log(counter);
       let percentage = ((counter/this.dna.length)*100);
-      return `Degree of similarity between Specimen ${this.specimenNum} and Specimen ${pAequor.specimenNum} is ${percentage}%.`;
+      console.log(`Degree of similarity between Specimen ${this.specimenNum} and Specimen ${pAequor.specimenNum} is ${percentage}%.`);
+      return percentage;
     },
     willLikelySurvive() {
       let ifCorG = [];
