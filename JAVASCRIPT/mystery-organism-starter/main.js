@@ -83,7 +83,7 @@ const createpAequor = number => {
   let pool = [];
   for (let i = 0; i < number; i++) {
     let randStrand = mockUpStrand();
-    pool += pAequorFactory(i,randStrand);
+    pool.push(pAequorFactory(i,randStrand));
   };
   return pool;
 }
