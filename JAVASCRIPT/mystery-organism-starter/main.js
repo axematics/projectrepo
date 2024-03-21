@@ -48,14 +48,28 @@ const pAequorFactory = (specimenNum, dna) => {
       };
       //console.log(selectedBase);
       return console.log(selectedBase);
+    },
+    compareDNA(pAequor) {
+      let counter = 0;
+      for (let i = 0; i < this.dna.length; i++) {
+          if (this.dna[i] === pAequor.dna[i]) {
+            counter++;
+          }
+      };
+      console.log(counter);
+      let percentage = ((counter/this.dna.length)*100);
+      return `Degree of similarity between Specimen ${this.specimenNum} and Specimen ${pAequor.specimenNum} is ${percentage}%.`;
     }
   }
 }
 
-let thing = pAequorFactory(1234, ['A','T','C','G','A','G','C'])
+let thing = pAequorFactory(1234, ['A','T','C','G','A','G','C','A','A','G']);
+let thing2 = pAequorFactory(9999, ['T','T','C','G','T','A','C','T','C','G']);
+let thing3 = pAequorFactory(34287, ['T','T','T','T','T','T','T','T','T','T']);
 //console.log(thing);
 //console.log(thing.mutate());
 thing.mutate();
-
+console.log(thing.compareDNA(thing2));
+console.log(thing.compareDNA(thing3));
 
 
