@@ -23,24 +23,24 @@ const pAequorFactory = (specimenNum, dna) => {
       let dnaBases = ['A', 'T', 'C', 'G'];
       switch (selectedBase) {
         case 'A':
-          while (selectedBase = 'A') {
+          do {
             selectedBase = returnRandBase();
-          };
+          } while (selectedBase === 'A');
           break;
         case 'T':
-          while (selectedBase = 'T') {
+          do {
             selectedBase = returnRandBase();
-          };
+          } while (selectedBase === 'T');
           break;
         case 'C':
-          while (selectedBase = 'C') {
+          do {
             selectedBase = returnRandBase();
-          };
+          } while (selectedBase === 'C');
           break;
         case 'G':
-          while (selectedBase = 'G') {
+          do {
             selectedBase = returnRandBase();
-          };
+          } while (selectedBase === 'G');
           break;
         default:
           console.log('Error in random generation');
@@ -52,10 +52,10 @@ const pAequorFactory = (specimenNum, dna) => {
   }
 }
 
-let thing = pAequorFactory(1234, ['A','T','G','C','A'])
-console.log(thing);
-console.log(thing.mutate);
-
+let thing = pAequorFactory(1234, ['A','T','C','G','A','G','C'])
+//console.log(thing);
+//console.log(thing.mutate());
+thing.mutate();
 
 
 
