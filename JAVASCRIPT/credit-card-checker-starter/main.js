@@ -24,11 +24,13 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // should return 'true' when card number is valid, 'false' when card number is invalid
-const validateCred = arr => {
+const validateCred = card => {
+    let arr = card.slice();
     let i;
     for (i = arr.length; i >= 0; i-=2) {arr[i] = arr[i]*2; if (arr[i] > 9) {arr[i] -= 9}};
     arr.pop();
-    console.log(arr);
+    //console.log(arr);    
+    //console.log(`Card number: ${card.join('')}`);
     let sum = arr.reduce((acc,curr) => acc + curr);
     if (sum%10 == 0) {
         return true;
@@ -37,7 +39,8 @@ const validateCred = arr => {
     }
 }
 
-console.log(validateCred(invalid1));
+console.log(validateCred(valid4));
+
 
 const findInvalidCards = arr => {
     let listInvalidCards = [];
