@@ -83,7 +83,7 @@ const createpAequor = number => {
   let pool = [];
   for (let i = 0; i < number; i++) {
     let randStrand = mockUpStrand();
-    pool.push(pAequorFactory(i,randStrand));
+    pool.push(pAequorFactory(i+1,randStrand));
   };
   return pool;
 }
@@ -101,5 +101,7 @@ console.log(thing2.willLikelySurvive());
 */
 
 let sample1 = createpAequor(10);
-console.log(sample1);
+//console.log(sample1);
+let sampleStudy = createpAequor(30);
+console.log(sampleStudy);
 
