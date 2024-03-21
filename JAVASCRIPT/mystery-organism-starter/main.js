@@ -19,6 +19,7 @@ const pAequorFactory = (specimenNum, dna) => {
     dna,
     mutate() {
       let selectedBase = this.dna[Math.floor(Math.random() * this.dna.length)];
+      console.log(selectedBase);
       let dnaBases = ['A', 'T', 'C', 'G'];
       switch (selectedBase) {
         case 'A':
@@ -46,12 +47,14 @@ const pAequorFactory = (specimenNum, dna) => {
           break;
       };
       //console.log(selectedBase);
-      return selectedBase;
+      return console.log(selectedBase);
     }
   }
 }
 
-
+let thing = pAequorFactory(1234, ['A','T','G','C','A'])
+console.log(thing);
+console.log(thing.mutate);
 
 
 
