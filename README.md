@@ -3,3 +3,5 @@
 - Javascript folder full of code snippets from exercises
 
 edit March 17 2024
+
+- barely did any coding the last couple of days. should at least review notes. 
