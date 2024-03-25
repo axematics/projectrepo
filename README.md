@@ -4,4 +4,4 @@
 - edit March 17 2024
 
 - barely did any coding the last couple of days. should at least review notes. 
-- March 25 2024
+- edit March 25 2024
